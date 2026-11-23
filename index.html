@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>CampusNet</title>
+  <style>
+    * { box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
+    body { margin: 0; padding: 24px 20px; background: #f5f7fa; color: #1f2937; }
+    h2 { margin: 0 0 20px; font-size: 20px; }
+    .card { background: #fff; padding: 16px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    input { width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 15px; }
+    button { width: 100%; padding: 12px; background: #2563eb; color: #fff; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; }
+    button:active { background: #1d4ed8; }
+    pre { margin-top: 16px; padding: 12px; background: #111827; color: #10b981; border-radius: 8px; font-size: 12px; line-height: 1.5; white-space: pre-wrap; word-break: break-all; min-height: 160px; }
+  </style>
+</head>
+<body>
+  <h2>校园网自动认证</h2>
+  <div class="card">
+    <input id="account" type="text" placeholder="学号" />
+    <input id="password" type="password" placeholder="密码" />
+    <button id="loginBtn">保存并立即登录</button>
+  </div>
+  <pre id="logBox">等待初始化...</pre>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

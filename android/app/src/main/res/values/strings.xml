@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CampusNet</string>
+    <string name="title_activity_main">CampusNet</string>
+    <string name="package_name">com.baimo.campusnet</string>
+    <string name="custom_url_scheme">com.baimo.campusnet</string>
+</resources>
