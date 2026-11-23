@@ -30,6 +30,8 @@
 
 如果你所在的学校同样使用城市热点 Dr.COM ePortal 网页认证，只需修改网关地址即可复用：
 
+### 需求: Node.js Android Studio
+
 ### 1. 抓包获取本校参数
 1. 电脑连接未登录的校园网，打开认证页面并按 `F12` 打开浏览器开发者工具（Network 面板，勾选 `Preserve log`）。
 2. 输入账号密码点击登录，找到包含 `c=Portal&a=login` 的 GET 请求。
@@ -38,14 +40,16 @@
 ### 2. 拉取代码并构建
 ```bash
 # 克隆仓库
-git clone [https://github.com/你的用户名/仓库名.git](https://github.com/你的用户名/仓库名.git)
-cd 仓库名
+https://github.com/WhiteB1ack/campus-net.git
+cd campus-net
 
 # 安装依赖
 npm install
 
 # 修改 src/main.ts 中的网关 IP 与默认 AC IP 后，构建并同步至 Android 工程
-npm run build && npx cap sync android
+npm run build
+npx cap sync android
 
 # 打开 Android Studio 编译安装
 npx cap open android
+
